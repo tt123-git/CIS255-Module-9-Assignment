@@ -184,7 +184,7 @@ header {
   
   @media (max-width: 800px) {
     #intro h2 {
-     display: none;
+      visibility: hidden;
     }
     #intro {
       flex-direction: column;
