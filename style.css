@@ -159,6 +159,8 @@ header {
   }
   #contact img {
     opacity: 0.4;
+    max-width: 100%;
+    height: auto;
   }
   #menu-items {
   display: flex;
