@@ -12,10 +12,10 @@
 <nav>
 <ul>
 <li><h1>Savoria</h1></li>  
-<li><a href="index.html">Home</a></li>
-<li><a href="menu.html">Menu</a></li>
-<li><a href="location.html">Location</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><a href="index.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Home</a></li>
+<li><a href="menu.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Menu</a></li>
+<li><a href="location.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Location</a></li>
+<li><a href="contact.html" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Contact</a></li>
 </ul>
 </nav>
 </header>
@@ -24,7 +24,7 @@
   <p>
     Welcome to "Burger Junction" - the ultimate burger destination! Experience handcrafted burgers bursting with flavor, diverse menu options, and speedy, friendly service. Join us for a memorable burger adventure!
   </p>
-  <a href="menu.html" class="menu-button">Order Now</a>
+  <a href="menu.html" class="menu-button" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Order Now</a>
   <img src="./img/burger1.png" id="img1">
   <h2>Savoria</h2>
 </div>
@@ -34,7 +34,7 @@
   <div id="location-content">
     <p>Location</p>
     <p>Serch near your location</p>
-    <a href="location.html" class="location-button">See Location</a>
+    <a href="location.html" class="location-button" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">See Location</a>
   </div>
 </div>
 <div id="contact">
@@ -43,11 +43,19 @@
  <div id="contact-content">
   <p>Contact</p>
   <p>If you have question or trouble?</p>
-  <a href="contact.html" class="contact-button">Contact Us</a>
+  <a href="contact.html" class="contact-button" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Contact Us</a>
 
  </div>
 </div>
-
+<script>
+  function changeColor(element) {
+    element.style.color = "#BFBFBF";
+  }
+  
+  function restoreColor(element) {
+    element.style.color = "";
+  }
+  </script>
 </main>
 </body>
 </html>
